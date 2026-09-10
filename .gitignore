@@ -1,0 +1,4 @@
+node_modules/
+backend/data/*.tmp
+*.log
+.DS_Store

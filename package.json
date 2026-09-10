@@ -1,0 +1,17 @@
+{
+  "name": "podcast-script-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "播客文稿管理器：节目、分段文稿、嘉宾、发布状态（本地文件存储版）",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node --watch backend/src/server.js",
+    "seed": "node backend/src/scripts/seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

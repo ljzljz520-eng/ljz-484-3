@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>播客文稿管理器</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/programs">🎙️ 播客文稿管理器</a>
+      <nav class="mainnav">
+        <a href="#/programs" data-nav="programs">节目</a>
+        <a href="#/guests" data-nav="guests">嘉宾</a>
+      </nav>
+      <div class="role-switch" title="演示用角色切换；正式环境由登录态决定">
+        <span class="role-label">当前身份</span>
+        <select id="roleSelect">
+          <option value="host">主持人（可编辑/可见草稿）</option>
+          <option value="viewer">听众（只读/不见草稿）</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="container">
+    <p class="loading">加载中…</p>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
